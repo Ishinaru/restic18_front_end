@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.header_vermelho{
+    font-size: small;
+    padding-left: 260px;
+    color:red;
+}
+
+.header_verde{
+    font-size:25px;
+    padding-left: 200px;
+    color: greenyellow;
+}
+
+#proposto{
+    font-size: 25px;
+    padding-left: 165px;
+    color:blue;
+}
+
+p[lang]{
+    color:blueviolet;
+}
+
+*{
+    background-color: grey;
+}
+
+h4{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header_fontboa{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Noto Sans Glagolitic', sans-serif;
+}

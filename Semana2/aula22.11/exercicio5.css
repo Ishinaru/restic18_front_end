@@ -1,0 +1,28 @@
+h2{
+    color:#c9a11c;
+}
+
+h5{
+    color:#c9a11c;
+}
+
+.caixa{
+    color:blue;
+}
+
+.caixa>ul{
+    color:salmon;
+}
+
+.usada{
+    color: blueviolet;
+}
+
+.alimentos{
+    color:aquamarine;
+}
+
+.caixa>.moveis>.usada
+{
+    color:greenyellow;
+}

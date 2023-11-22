@@ -1,0 +1,29 @@
+img{
+    height: 150px;
+    width: 150px;
+}  
+
+.header_giallo{
+    color:#ffff00;
+}
+
+
+.header_rosso{
+    color:#fe0000;;
+}
+
+.header_blue{
+    color:#00a8ff;
+}
+
+.header_marrone{
+    color:#ead6bb;
+}
+
+.header_viola{
+    color: #610c9f;
+}
+
+*{
+    background-color: #DE8F5F;
+}
