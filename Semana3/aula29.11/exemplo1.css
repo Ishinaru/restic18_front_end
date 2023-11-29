@@ -1,0 +1,29 @@
+.table-uesc{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 200px;
+    background-color: darkorange;
+    font-size: xx-large;
+    text-align: center;
+    
+}
+
+.container{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+}
+
+.A1{
+    background-color: aqua;
+}
+
+.A2{
+    background-color: brown;
+}
+
+.A3{
+    background-color: blueviolet;
+}

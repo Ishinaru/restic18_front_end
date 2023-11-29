@@ -1,0 +1,47 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 400px 50px;
+    gap: 15px;
+
+}
+
+#header{
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+#barra-lateral{
+    background-color: brown;
+    grid-row: span 4;
+}
+
+#caixa1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: red;
+    grid-row: span 1;
+}
+
+#caixa2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: red;
+    grid-column: span 2;
+}
+
+#conteudo{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: cyan;
+    grid-row: span 1;
+}
+
+#footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: saddlebrown;
+}
