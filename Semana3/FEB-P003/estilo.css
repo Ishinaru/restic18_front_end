@@ -1,0 +1,55 @@
+
+.container{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    margin: 30px;
+
+}
+
+.destino {
+    background-color: #E5D4FF;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: #742DC8;
+}
+
+.destino img {
+    border-radius: 8px;
+    margin: 15px 0;
+    width: 140px;
+    height: 100px;
+}
+
+.botao{
+    background-color: chartreuse;
+    border-radius: 15px;
+    height: 30px;
+    margin-bottom: 20px;
+    color: white;
+    border-color: chartreuse;
+    font-family: 'Merriweather'
+}
+
+p{
+    font-size: small;
+    font-family: 'Pacifico', cursive;
+
+}
+
+ul{
+    list-style: "✓";
+
+}
+
+@media (max-width: 1199px){
+    #caixa_pagina{
+        flex-direction: column;
+    }
+}
+
+
