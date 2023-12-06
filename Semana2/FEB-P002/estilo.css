@@ -1,0 +1,196 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 20% ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 5px;
+}
+@media (max-width:500px) and (max-height:500px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 5px;
+    }
+}
+#conteudo_menu{
+    background-color: darkgray;
+    font-size: large;
+    text-align: left;
+}
+@media (max-width:500px) and (max-height:500px){
+    #universidade{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: rgb(44, 44, 153);
+        font-size: xx-large;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+}
+#conteudo_noticias{
+    background-color: darkgray;
+    font-size: large;
+    text-align: left;
+}
+
+#conteudo_destaques{
+    background-color: darkgray;
+    font-size: large;
+    text-align: center;
+}
+
+#conteudo{
+    background-color: darkgray;
+    font-size: large;
+    text-align: left;
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+#universidade{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    background-color: rgb(44, 44, 153);
+    font-size: xx-large;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    background-color: gray;
+    font-size: large;
+    text-align: left;
+    gap: 5px;
+}
+
+@media (max-width:500px) and (max-height:500px) {
+    #menu{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: gray;
+        font-size: large;
+        text-align: left;
+    }
+}
+
+#noticias{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    background-color: gray;
+    font-size: large;
+    text-align: left;
+    gap: 5px;
+}
+
+
+@media(max-width:500px) and (max-height:500px){
+    #noticias{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: gray;
+        font-size: large;
+        text-align: left;
+        gap: 5px;
+    }
+}
+
+#destaque{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    background-color: gray;
+    font-size: large;
+    text-align: left;
+}
+
+@media(max-width:500px) and (max-height:500px){
+    #destaque{
+        grid-row-start: 3;
+        grid-row-end: 3;
+        background-color: gray;
+        font-size: large;
+        text-align: left;
+    }
+}
+
+#servicos{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: gray;
+    font-size: large;
+    text-align: left;
+}
+@media(max-width:500px) and (max-height:500px){
+    #servicos{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        background-color: gray;
+        font-size: large;
+        text-align: left;
+    }
+}
+
+#resultados{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: gray;
+    font-size: large;
+    text-align: left;
+    
+    
+}
+
+@media(max-width:500px) and (max-height:500px){
+    #resultados{
+        grid-row-start: 5;
+        grid-row-end: 5;
+        background-color: gray;
+        font-size: large;
+        text-align: left;
+        
+        
+    }
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(44, 44, 153);
+    font-size: large;
+    height: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+@media(max-width:500px) and (max-height:500px){
+    #footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(44, 44, 153);
+        font-size: large;
+        height: 50px;
+        font-family: 'Playfair Display', serif;
+    }
+}
