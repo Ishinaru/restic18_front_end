@@ -30,7 +30,35 @@
         </div>
         <div id="footer">Universidade Estadual de Santa Cruz</div>
     </div>
-    <script src="Promisses.js"></script>
+    <script>
+        var url = 'https://newsapi.org/v2/everything?' +
+            'country=br&' +
+            'category=education&' +
+            'apiKey=183be9fc0a1b4ab4b31c6052463efbac';
+
+        var req = new Request(url);
+        fetch(req).then(function (reposta) {
+            console.log(reposta.json());
+        })
+
+        const NewsAPI = require('newsapi');
+        const newsapi = new NewsAPI('183be9fc0a1b4ab4b31c6052463efbac');
+        // To query /v2/top-headlines
+        // All options passed to topHeadlines are optional, but you need to include at least one of them
+        newsapi.v2.topHeadlines({
+            category: 'education',
+            language: 'pt',
+            country: 'br'
+        }).then(response => {
+            console.log(response);
+            /*
+              {
+                status: "ok",
+                articles: [...]
+              }
+            */
+        });
+    </script>
 </body>
 
 </html>
