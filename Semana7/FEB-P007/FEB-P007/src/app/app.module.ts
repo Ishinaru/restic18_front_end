@@ -3,10 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
+import { ClassesComponent } from './classes/classes.component';
+import { AppCategoriaDirective } from './app-categoria.directive';
+import { VeiculoEstiloDirective } from './veiculo-estilo.directive';
+import { ObjetosComponent } from './objetos/objetos.component';
+import { PropriedadesComponent } from './propriedades/propriedades.component';
+import { ValorPropriedadeComponent } from './valor-propriedade/valor-propriedade.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarrinhoComponent,
+    ClassesComponent,
+    AppCategoriaDirective,
+    VeiculoEstiloDirective,
+    ObjetosComponent,
+    PropriedadesComponent,
+    ValorPropriedadeComponent
   ],
   imports: [
     BrowserModule,

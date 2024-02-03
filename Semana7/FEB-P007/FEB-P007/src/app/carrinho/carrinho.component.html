@@ -1,0 +1,10 @@
+<div class="carrinho-container">
+    <h2 class="titulo">Veículos Selecionados</h2>
+    <ul>
+      <li *ngFor="let veiculo of veiculosSelecionados;let i = index">
+        {{ veiculo.Name }} ({{veiculo.Model}})
+        <button (click)="removerVeiculo(i)"></button>
+      </li>
+    </ul>
+</div>
+  

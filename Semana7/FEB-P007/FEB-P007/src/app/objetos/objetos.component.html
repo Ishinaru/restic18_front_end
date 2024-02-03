@@ -1,0 +1,9 @@
+<div>
+    <h2 class="titulo">Veículos</h2>
+    <ul>
+        <li *ngFor="let veiculo of veiculos">
+            <button (click)="selecionarVeiculo(veiculo)" appVeiculoEstilo[categoria]="categoriaSelecionada"></button>
+            {{ veiculo.name }} ({{veiculo.model}})
+        </li>
+    </ul>
+</div>
