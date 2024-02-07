@@ -1,0 +1,8 @@
+.formComum{
+    width: 80%;
+}
+.formComum input{
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}   
