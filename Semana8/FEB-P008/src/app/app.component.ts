@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WikipediaService } from './wikipedia.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FEB-P008';
+  resultados: any[] = [];
+  termo: any ='';
+
+  constructor(private wikipediaService: WikipediaService){}
+
+  pesquisar(termo:string){
+    this.termo = termo;
+    this.wikipediaService.pesquisa(termo).subscribe(data =>{
+      this.resultados = data.query.search;
+    })
+  }
 }
