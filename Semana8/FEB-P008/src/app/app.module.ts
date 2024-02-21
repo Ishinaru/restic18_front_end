@@ -1,0 +1,24 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BarraBuscaComponent } from './barra-busca/barra-busca.component';
+import { ResultadoPesquisaComponent } from './resultado-pesquisa/resultado-pesquisa.component';
+import { DestaquePipe } from './destaque.pipe';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    BarraBuscaComponent,
+    ResultadoPesquisaComponent,
+    DestaquePipe
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

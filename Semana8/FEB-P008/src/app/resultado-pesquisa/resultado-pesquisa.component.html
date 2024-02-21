@@ -1,0 +1,5 @@
+<div *ngFor="let resultado of resultadosPesquisa">
+    <h3 [innerHTML]="resultado.titulo | destaque: termo"></h3>
+    <p [innerHTML]="resultado.trecho | destaque: termo"></p>
+    <a [attr.href]="'https://pt.wikipedia.org/w/api.php'+ resultado.titulo" target="_blank">Ver mais</a>
+</div>
