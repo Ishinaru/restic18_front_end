@@ -6,8 +6,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './barra-busca.component.css'
 })
 export class BarraBuscaComponent {
-  @Output() pesquisaFeita = new EventEmitter<string>();
-  termo: string = '';
+  @Output() pesquisaFeita = new EventEmitter<any>();
+  termo: any = [];
 
   pesquisar(){
     this.pesquisaFeita.emit(this.termo);
