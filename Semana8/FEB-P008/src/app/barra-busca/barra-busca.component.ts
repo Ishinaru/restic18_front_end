@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-barra-busca',
@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class BarraBuscaComponent {
   @Output() pesquisaFeita = new EventEmitter<any>();
-  termo: any = [];
+  termo!: any;
 
   pesquisar(){
     this.pesquisaFeita.emit(this.termo);

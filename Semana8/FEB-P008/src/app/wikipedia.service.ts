@@ -6,17 +6,20 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class WikipediaService {
-  private apiUrl = 'https://pt.wikipedia.org/w/api.php';
+  private apiUrl = 'https://pt.wikipedia.org/w/api.php?';
 
   constructor(private http: HttpClient) { }
 
-  pesquisa(term: string): Observable<any> {
+  pesquisa(termo:string){
     const params = new HttpParams()
-      .set('action', 'query')
-      .set('format', 'json')
-      .set('list', 'search')
-      .set('srsearch', term);
+    .set('action', 'query')
+    .set('format', 'json')
+    .set('list', 'search')
+    .set('utf8', '1')
+    .set('srsearch', termo)
+    .set('origin', '*');
 
-    return this.http.get<any>(this.apiUrl, { params });
+    return this.http.get<any>(this.apiUrl, {params});
   }
+
 }
