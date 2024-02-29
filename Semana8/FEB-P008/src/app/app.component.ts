@@ -9,7 +9,7 @@ import { WikipediaService } from './wikipedia.service';
 export class AppComponent {
   title = 'FEB-P008';
   resultados: any[] = [];
-  termo: string = '';
+  termo!: any;
 
   constructor(private wikipediaService: WikipediaService){}
 
