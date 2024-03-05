@@ -7,6 +7,11 @@ import { CadastroAtendimentoComponent } from './cadastro-atendimento/cadastro-at
 import { ListagemAtendimentosComponent } from './listagem-atendimentos/listagem-atendimentos.component';
 import { EdicaoAtendimentoComponent } from './edicao-atendimento/edicao-atendimento.component';
 import { DetalhesAtendimentoComponent } from './detalhes-atendimento/detalhes-atendimento.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes:Routes = [
+  {path: 'adicionaCliente', component:CadastroAtendimentoComponent}
+];
 
 @NgModule({
   declarations: [
@@ -18,7 +23,8 @@ import { DetalhesAtendimentoComponent } from './detalhes-atendimento/detalhes-at
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
