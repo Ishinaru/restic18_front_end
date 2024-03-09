@@ -10,16 +10,18 @@ export class WikipediaService {
 
   constructor(private http: HttpClient) { }
 
-  pesquisa(termo:string){
-    const params = new HttpParams()
-    .set('action', 'query')
-    .set('format', 'json')
-    .set('list', 'search')
-    .set('utf8', '1')
-    .set('srsearch', termo)
-    .set('origin', '*');
-
-    return this.http.get<any>(this.apiUrl, {params});
+  pesquisa(termo:string): Observable<any>{
+    const params = new HttpParams({
+      fromObject:{
+        action: 'query',
+        format: 'json',
+        list: 'search',
+        utf8: '1',
+        srsearch: termo,
+        origin: '*'
+      }
+    });
+    return this.http.get(this.apiUrl,{params});
   }
 
 }

@@ -9,13 +9,13 @@ import { WikipediaService } from './wikipedia.service';
 export class AppComponent {
   title = 'FEB-P008';
   resultados: any[] = [];
-  termo!: any;
+  termo: string = '';
 
   constructor(private wikipediaService: WikipediaService){}
 
   pesquisar(termo:string){
     this.termo = termo;
-    this.wikipediaService.pesquisa(termo).subscribe(data =>{
+    this.wikipediaService.pesquisa(termo).subscribe((data) =>{
       this.resultados = data.query.search;
     })
   }

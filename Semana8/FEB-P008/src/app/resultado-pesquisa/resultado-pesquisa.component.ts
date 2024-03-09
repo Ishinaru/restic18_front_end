@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ResultadoPesquisaComponent {
   @Input() resultadosPesquisa:any[] = [];
-  @Input() termo: string = '';
+  @Input() termo!: any;
 }
